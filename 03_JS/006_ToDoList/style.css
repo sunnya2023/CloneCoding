@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(117, 140, 241);
+}
+
+.container{
+padding: 20px 30px;
+background-color: #fff;
+border-radius: 5px;
+}
+
+.container .input__filed{
+    max-width: 100%;
+    display: flex;
+  padding: 20px 30px;
+}
+
+.container .input__filed .input-box input{
+padding: 10px 10px;
+outline: none;
+border: none;
+font-size: 14px;
+border-bottom: 1px solid blue;
+background-color: rgb(229, 227, 245);
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
+}
+
+.container .input__filed .add{
+    padding: 10px 10px;
+    background-color: rgb(132, 123, 251);
+    border: none;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.container .list_field{
+    padding:10px 20px;
+    max-width: 100%;
+} 
+
+.container .list_field .new__list{
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container .list_field .new__list .checkbox input{
+border-radius: 50%;
+}
+
+.container .list_field .new__list  .txt p {
+    font-size: 14px;
+}
+
+.container .list_field .new__list  .del i{
+    font-size: 14px;
+    cursor: pointer;
+    color: red;
+}

@@ -1,0 +1,64 @@
+form{
+    margin-bottom: 147px;
+}
+
+.txt-field{
+font-size: 24px;
+line-height: normal;
+}
+
+.txt-field:nth-child(1){
+margin-bottom: 27px;
+}
+
+.txt-field input{
+    max-width: 228px;
+height: 57px;
+border-radius: 7px;
+border: none;
+text-align: center;
+font-size:24px ;
+margin: 0 17px ;
+font-family: 'Gmarket Sans';
+}
+
+.btn-result{
+margin-top: 110px;
+position: relative;
+}
+
+.btn-result::after{
+    position: absolute;
+    content: '';
+    width: 64px ;
+    height: 72px;
+    bottom: -20px;
+    right: -70px;
+background-image: url(../../img/hand.png);
+}
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.txt-field strong{
+    font-size: 72px;
+vertical-align: -14px;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.btn-go{
+    margin: 147px 12px 151px 0 ;
+}
+
+.btn-share{
+    background-color: #fff;
+}

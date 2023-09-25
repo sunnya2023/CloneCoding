@@ -1,0 +1,45 @@
+#modal-wrap{
+    position: fixed;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.modal-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+border-radius: 20px;
+font-family: 'OTEnjoystoriesBA';
+color: #5B2386;
+/* max-width: 433px;
+width: 100%; */
+padding: 76px 126px 68px;
+}
+
+.modal-content h1{
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.modal-content h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.modal-content img{
+    max-width: 344px;
+}
+
+.btn-close{
+    margin-top: 74px;
+}

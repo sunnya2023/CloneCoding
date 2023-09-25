@@ -1,0 +1,29 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header
+{
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo h2{
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.header .nav ul
+{
+display:flex ;
+}
+
+.header .nav ul li
+{
+    margin-right: 20px;
+}

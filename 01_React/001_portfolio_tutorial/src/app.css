@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;600&family=Neonderthaw&family=Noto+Sans+KR:wght@500;700&family=Poppins:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Advent Pro', sans-serif;
+    transition: .3s ease;
+}
+
+:root{
+    --primaryColor:#00eaff;
+    --primaryHover:hsl(185,92%,41%);
+    --secondaryColor:rgb(150,162,188);
+    --paragraphColor:rgb(127,127,175);
+    --BgColor:#031a30;
+    --formColor:rgb(2,15,29);
+    --projectCardColor:#072340;
+    --textColor:#dae4fb;
+    --headerHeight:3rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flext{
+    display: flex;
+    align-content: center;
+}
+
+.grid{
+    display: grid;
+    align-content: center;
+}
+
+input, textarea{
+    font-size: 100%;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn{
+    border: 2px solid var(--primaryHover);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    color: var(--paragraphColor);
+    background: transparent;
+}
+
+
+/* btn hover effect */
+.btn::before{
+    content: '';
+    height: 100%;
+    width: 0%;
+    background: var(--paragraphColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .2s;
+}
+
+.btn::after{
+    content: '';
+    height: 100%;
+    width: 0%;
+    background: var(--BgColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn:hover::before, .btn:hover::after{
+    width: 100%;
+}
+
+.navLink{
+    position: relative;
+}
+
+/* link hover effect */
+.navLink::before{
+    content: '';
+    position: absolute;
+    background: var(--primaryHover);
+    height: 2px;
+    width: 0%;
+    bottom: -3px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navLink::after{
+    content: '';
+    position: absolute;
+    background: var(--projectCardColor);
+    height: 2px;
+    width: 0%;
+    bottom: -3px;
+    left: 0;
+    transition: 0.8s;
+}
